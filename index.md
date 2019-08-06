@@ -4,11 +4,6 @@ category: home
 layout: default
 ---
 
-
-
-
-
-
 ### Code repository
 This website, and all course materials, are available as an open Github repository available at:
 
