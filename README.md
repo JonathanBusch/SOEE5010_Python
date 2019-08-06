@@ -1,4 +1,4 @@
-#SOEE5010 - Python Statistics Workshops
+# SOEE5010 - Python Statistics Workshops
 
 Welcome to Statistics in Python, a series of workshops on introductory statistics taught as part of the module SOEE5010: Research Methods, in the School of Earth and Environment at the University of Leeds in 2019.
 
