@@ -4,6 +4,9 @@ category: home
 layout: default
 ---
 
+{% capture index %}{% include_relative content/website_data/index.md %}{% endcapture %}
+{{ index | markdownify }}
+
 ### Code repository
 This website, and all course materials, are available as an open Github repository available at:
 
