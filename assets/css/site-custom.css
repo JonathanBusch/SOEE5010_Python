@@ -8,7 +8,7 @@
 }
 nav.navbar {
     position: absolute;
-    width: 100%;
+    width: auto;
     top: 0%;
 }
 /* Keep the footer at the bottom of the page */
@@ -18,7 +18,7 @@ html {
 }
 
 #body {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 60px;       /* Same as footer height */
 }
 
