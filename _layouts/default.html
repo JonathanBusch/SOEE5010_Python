@@ -32,8 +32,9 @@
 <body>
 
   <!-- Static navbar -->
+  <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
-    <div class="container">
+
     <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><font
                                 color='#be1e2d'>{{site.data.course.number}}</font></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +43,10 @@
 
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item {% if page.category == "home" %} active{% endif %}">
+            <li class="nav-item{% if page.category == "home" %} active{% endif %}">
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item {% if page.category == "overview" %} active{% endif %}">
+            <li class="nav-item{% if page.category == "overview" %} active{% endif %}">
                 <a class="nav-link" href="{{ site.baseurl }}/overview.html">Overview</a>
             </li>
             <li class="nav-item dropdown{% if page.category == "note" %} active{% endif %}">
@@ -68,7 +69,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     {% if site.workshops[0] %}
-                    {% for note in site.workshops %}
+                    {% for workshop in site.workshops %}
                     <li><a class="dropdown-item" href="{{site.baseurl}}{{workshop.url}}">{{workshop.title}}</a></li>
                     {% endfor %}
                     {% else %}
@@ -87,8 +88,8 @@
             </li>
         </ul>
     </div>
-    </div>
 </nav>
+</div>
 
   <div class="container" id="body">
     {{content}}
