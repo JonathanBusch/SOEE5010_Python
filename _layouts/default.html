@@ -32,59 +32,61 @@
 <body>
 
   <!-- Static navbar -->
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><font
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+    <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><font
                                 color='#be1e2d'>{{site.data.course.number}}</font></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li{% if page.category == "home" %} class="active"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
-          <li{% if page.category == "overview" %} class="active"{% endif %}><a href="{{ site.baseurl }}/overview.html">Overview</a></li>
-          <li class="dropdown{% if page.category == "note" %} active{% endif %}">
-            <a href="#" class="dropdown-toggle"
-                data-toggle="dropdown">Lectures <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              {% if site.notes[0] %}
-              {% for note in site.notes %}
-              <li><a href="{{site.baseurl}}{{note.url}}">{{note.title}}</a></li>
-              {% endfor %}
-              {% else %}
-              <li class="dropdown-header">No notes posted</li>
-              {% endif %}
-            </ul>
-          </li>
-          <li class="dropdown{% if page.category == "workshop" %} active{% endif %}">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              {% if site.workshops[0] %}
-              {% for workshop in site.workshops %}
-              <li><a href="{{site.baseurl}}{{workshop.url}}">{{workshop.title}}</a></li>
-              {% endfor %}
-              {% else %}
-              <li class="dropdown-header">No workshops posted</li>
-              {% endif %}
-            </ul>
-          </li>
-          <li class="dropdown{% if page.category == "resource" %} active{% endif %}">
-            <a href="#" class="dropdown-toggle"
-                data-toggle="dropdown">Resources <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-          <li><a href="{{ site.baseurl }}/software.html">Software</a></li>
-          <li><a href="{{ site.baseurl }}/further_resources.html">Further resources</a></li>
-            </ul>
-          </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item {% if page.category == "home" %} active{% endif %}">
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item {% if page.category == "overview" %} active{% endif %}">
+                <a class="nav-link" href="{{ site.baseurl }}/overview.html">Overview</a>
+            </li>
+            <li class="nav-item dropdown{% if page.category == "note" %} active{% endif %}">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Notes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% if site.notes[0] %}
+                    {% for note in site.notes %}
+                    <li><a class="dropdown-item" href="{{site.baseurl}}{{note.url}}">{{note.title}}</a></li>
+                    {% endfor %}
+                    {% else %}
+                    <li class="dropdown-header">No notes posted</li>
+                    {% endif %}
+                </div>
+            </li>
+            <li class="nav-item dropdown{% if page.category == "workshop" %} active{% endif %}">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Workshops
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% if site.workshops[0] %}
+                    {% for note in site.workshops %}
+                    <li><a class="dropdown-item" href="{{site.baseurl}}{{workshop.url}}">{{workshop.title}}</a></li>
+                    {% endfor %}
+                    {% else %}
+                    <li class="dropdown-header">No workshops posted</li>
+                    {% endif %}
+                </div>
+            </li>
+            <li class="nav-item dropdown{% if page.category == "resource" %} active{% endif %}">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resources
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="{{site.baseurl}}/software,html">Software</a></li>
+                    <li><a class="dropdown-item" href="{{site.baseurl}}/further_resources,html">Further resources</a></li>                    
+                </div>
+            </li>
         </ul>
-      </div><!--/.nav-collapse -->
     </div>
-  </div>
+</nav>
 
   <div class="container" id="body">
     {{content}}
