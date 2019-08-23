@@ -6,6 +6,11 @@
     max-width: 850px;
     padding: 0 15px;
 }
+nav.navbar {
+    width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* Keep the footer at the bottom of the page */
 html {
     position: relative;
