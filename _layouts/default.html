@@ -67,7 +67,7 @@
             <ul class="dropdown-menu">
               {% if site.workshops[0] %}
               {% for workshop in site.workshops %}
-              <li><a href="{{site.baseurl}}{{lab.url}}">{{workshop.title}}</a></li>
+              <li><a href="{{site.baseurl}}{{workshop.url}}">{{workshop.title}}</a></li>
               {% endfor %}
               {% else %}
               <li class="dropdown-header">No workshops posted</li>
