@@ -40,24 +40,3 @@ defaults:
     values:
       category: workshop
       layout: workshop
-
-      
-scholar:
-    style: assets/bibliography/my_apa.csl
-    locale: en
-    
-    sort_by: author
-    order: ascending
-    
-    source: content/bibliography
-    bibliography: bibliography.bib
-    bibliography_template: "{{reference}}"
-    
-    replace_strings: true
-    join_strings:    true
-    
-    details_dir:    bibliography
-    details_layout: bibtex.html
-    details_link:   Details
-    
-    query: "@*"
