@@ -7,8 +7,10 @@
     padding: 0 15px;
 }
 nav.navbar {
-    width: inherit;
-    padding: 0 15px;
+    position: fixed;
+    left: 50%;
+    top: 0%;
+    transform: tranlsateX(-50%);
 }
 /* Keep the footer at the bottom of the page */
 html {
