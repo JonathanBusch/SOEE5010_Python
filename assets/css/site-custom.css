@@ -33,7 +33,7 @@ html {
 /* Overall font settings */
 #body, #footer, .container {
     font-family: 'Open Sans', arial, sans-serif;
-    font-size: 14pt;
+    font-size: 1.0em;
     line-height: 1.5;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -54,14 +54,14 @@ a {
 }
 
 blockquote{
-  font-size: 1.2em;
-  width:60%;
-  margin:50px auto;
+  font-size: 1.0em;
+  width:90%;
+  margin:20px auto;
   font-style:italic;
   color: #555555;
-  padding:1.2em 30px 1.2em 75px;
+  padding:1.2em 20px 1.2em 25px;
   border-left:8px solid #be1e2d ;
-  line-height:1.6;
+  line-height:1.2;
   position: relative;
   background:#EDEDED;
 }
