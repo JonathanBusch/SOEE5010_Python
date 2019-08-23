@@ -49,8 +49,12 @@ h1 {
 }
 
 a {
-  color: #be1e2d;
+  color: #e83e8c;
   text-decoration: none;
+}
+
+code {
+  color: #555555;
 }
 
 blockquote{
@@ -60,7 +64,7 @@ blockquote{
   font-style:italic;
   color: #555555;
   padding:1.2em 20px 1.2em 25px;
-  border-left:8px solid #be1e2d ;
+  border-left:8px solid #e83e8c ;
   line-height:1.2;
   position: relative;
   background:#EDEDED;
