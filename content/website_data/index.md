@@ -2,7 +2,7 @@
 
 ## Statistics in Python
 
-Welcome to the Python statistics labs for SOEE5010: Research Methods, taught by Jonathan Busch in the School of Earth & Environment. 
+Welcome to the Python statistics labs for SOEE5010: Research Methods, taught by Jonathan Busch in the School of Earth & Environment. These workshops are a prerequisite for any student wishing to take SOEE5582: Tools & Techniques in Ecological Economics in the second semester (unless you are already familiar with Python programme).
 
 ### Locations
 
