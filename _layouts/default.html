@@ -56,10 +56,10 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     {% if site.notes[0] %}
                     {% for note in site.notes %}
-                    <li><a class="dropdown-item" href="{{site.baseurl}}{{note.url}}">{{note.title}}</a></li>
+                    <a class="dropdown-item" href="{{site.baseurl}}{{note.url}}">{{note.title}}</a>
                     {% endfor %}
                     {% else %}
-                    <li class="dropdown-header">No notes posted</li>
+                    <a class="dropdown-header">No notes posted</a>
                     {% endif %}
                 </div>
             </li>
@@ -70,10 +70,10 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     {% if site.workshops[0] %}
                     {% for workshop in site.workshops %}
-                    <li><a class="dropdown-item" href="{{site.baseurl}}{{workshop.url}}">{{workshop.title}}</a></li>
+                    <a class="dropdown-item" href="{{site.baseurl}}{{workshop.url}}">{{workshop.title}}</a>
                     {% endfor %}
                     {% else %}
-                    <li class="dropdown-header">No workshops posted</li>
+                    <a class="dropdown-header">No workshops posted</a>
                     {% endif %}
                 </div>
             </li>
@@ -82,8 +82,8 @@
                     Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="{{site.baseurl}}/software.html">Software</a></li>
-                    <li><a class="dropdown-item" href="{{site.baseurl}}/further_resources.html">Further resources</a></li>                    
+                    <a class="dropdown-item" href="{{site.baseurl}}/software.html">Software</a>
+                    <a class="dropdown-item" href="{{site.baseurl}}/further_resources.html">Further resources</a>               
                 </div>
             </li>
         </ul>
