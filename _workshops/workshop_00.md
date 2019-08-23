@@ -28,6 +28,4 @@ If you want to explore further by yourself the contents presented in this tutori
 * Gallery of [interesting notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks): a wealth of examples of Jupyter (formerly called IPython) notebooks.
 * {% cite downey2012 %}: very good general introduction to Python as a programming language and to the algorithmic way of thinking. The [book](http://www.greenteapress.com/thinkpython/thinkpython.html) is freely available in [HTML](http://www.greenteapress.com/thinkpython/html/index.html) and [PDF](http://www.greenteapress.com/thinkpython/thinkpython.pdf).
 
-### References
 
-{% bibliography --cited %}
