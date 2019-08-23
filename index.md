@@ -10,7 +10,7 @@ layout: default
 ### Code repository
 This website, and all course materials, are available as an open Github repository available at:
 
-> [https://github.com/JonathanBusch/SOEE5010_Python](https://github.com/JonathanBusch/SOEE5010_Python)
+> [https://github.com/JonathanBusch/SOEE5010_Python](https://github.com/JonathanBusch/SOEE5010_Python)  
 
 ### License
 
